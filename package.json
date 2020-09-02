@@ -1,0 +1,19 @@
+{
+  "name": "w37_ttb_finalll",
+  "version": "1.0.0",
+  "description": "Finish Sign Pages and functions\r Error in Detail Page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangthinh2102/W37_TTB_FINALLL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoangthinh2102/W37_TTB_FINALLL/issues"
+  },
+  "homepage": "https://github.com/hoangthinh2102/W37_TTB_FINALLL#readme"
+}

@@ -1,0 +1,529 @@
+/* 
+    Theme name: Sign
+
+    ================================== TABLE OF CONTENTS ==================================
+    1, Reset Css
+    2, Navbar
+    3, Banner
+    4, Sign-up
+    5, Footer
+    6, Sign-in
+
+
+
+    */
+
+/* ================================== 1, Reset Css ================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none !important;
+}
+ul li {
+  list-style: none;
+}
+img {
+  display: block;
+  width: auto;
+}
+.bold {
+  font-weight: 700;
+}
+input::placeholder {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+}
+
+.show{
+  display: flex !important;
+  flex-basis: 100%;
+  max-height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+/* ================================== 2, Header ================================== */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__menu-logo .menu-logo__link {
+  font-size: 2rem;
+}
+
+.header__menu-logo .menu-logo__link:hover {
+}
+
+.header__menu-list {
+  display: flex;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.menu__list-item {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 992px){
+  .menu__list-item{
+    margin-left: 0 !important;
+  }
+  .menu__list-item{
+    margin-top: 0.5rem;
+  }
+}
+
+.list-item__link,
+.header__menu-logo .menu-logo__link {
+  color: #222;
+}
+
+.list-item__link:hover,
+.header__menu-logo .menu-logo__link:hover {
+  color: #f65e39;
+  text-decoration: none;
+}
+
+.btn-sign-out {
+  font-size: 1.5rem;
+}
+.btn-sign-out:hover i {
+  color: #f65e39;
+}
+
+.navbar-toggler,
+.navbar-collapse {
+  display: none;
+}
+
+.collapse__btn{
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .header__menu-list {
+    display: none;
+  }
+  .navbar-toggler,
+  .navbar-collapse {
+    display: block;
+  }
+
+  .collapse__btn{
+    display: block;
+    font-size: 1.75rem;
+  }
+}
+
+/* ================================== 3, Banner ================================== */
+.banner {
+  padding: 3rem 0;
+  background: linear-gradient(90deg, #f65e38 0, #f68a39 51%, #f65e38);
+  color: #fff;
+}
+
+.banner .banner__title {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.625rem;
+}
+.banner .banner__text {
+  font-size: 1.125rem;
+}
+
+/* ================================== 4, Sign-up ================================== */
+.sign {
+  margin-bottom: 3rem;
+}
+.sign .pros {
+  margin-top: 3rem;
+}
+.sign .pros img {
+  max-width: 100%;
+}
+.sign .pros .pros__title {
+  margin: 1.5rem 0 0.875rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.sign .pros .pros__text {
+  color: #555;
+}
+
+.sign .account {
+  padding: 2rem;
+  margin-top: -6.875rem;
+  background: #fff;
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.02),
+    0 24px 38px 3px rgba(0, 0, 0, 0.04), 0 11px 15px -7px rgba(0, 0, 0, 0.05);
+  border-radius: 0.625rem;
+}
+
+.sign-up .account .account__sign-up .sign-up__title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.sign__input-item {
+  margin: 1rem 0;
+}
+
+.sign__input-item input {
+  border-radius: 3rem;
+  padding: 0.5rem 1.25rem;
+  width: 100%;
+  height: 3rem;
+  border: 0.05rem solid #e6e6e6;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+.input-item__wrapper {
+  position: relative;
+}
+
+.input-item__wrapper input:focus {
+  outline: 0;
+  border-color: #f65e39;
+  box-shadow: 0 0 5px 0 rgba(246, 94, 57, 0.5);
+}
+.input-item__wrapper i {
+  position: absolute;
+  right: 3.15rem;
+  top: 1rem;
+}
+.input-item__password-header {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.input-item__wrapper .fa-lock {
+  color: #8f8f8f;
+}
+
+.sign .input-item__error {
+  color: #f65e39;
+  margin-top: 0.5rem;
+}
+
+.account__btn {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.account__btn button {
+  box-shadow: 0 4px 12px 0 rgba(246, 116, 57, 0.4);
+  background-image: linear-gradient(90deg, #f65e38 0, #f68a39 51%, #f65e38);
+  background-size: 200% auto;
+  border-radius: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 0 1.875rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.account__btn button:hover {
+  background-position: 100%;
+  color: #fff;
+}
+
+.account__btn-sign-in {
+  margin: 2rem 0;
+}
+.account__btn-sign-in .btn-sign-in__text {
+  color: #f65e39;
+}
+
+/* ================================== Media queries for Sign up ================================== */
+
+@media screen and (max-width: 992px) {
+  .sign .sign__left {
+    display: none;
+  }
+  .sign .account {
+    margin-top: -1.5rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .sign .account {
+    margin-top: -2.5rem;
+  }
+  .banner .banner__title {
+    font-size: 1.2rem;
+  }
+  .banner .banner__text {
+    font-size: 1rem;
+  }
+}
+
+/* ================================== 5, Footer ================================== */
+.footer {
+  padding: 1.5rem 0;
+  margin-top: 5rem;
+  border-top: 0.1rem solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+.footer__text {
+  color: #999;
+}
+
+/* ================================== 6, Sign-in ================================== */
+.sign-in .sign-in__title {
+}
+.sign .account .account__btn button:focus {
+  box-shadow: none;
+}
+
+/* ================================== 7, Favorite Slider ================================== */
+.favorite {
+  padding: 3rem 2rem;
+}
+.item__link-wrapper {
+  position: relative;
+}
+
+.favorite .favorite__title {
+  margin-bottom: 1.5rem;
+}
+
+.link-wrapper__info {
+  position: absolute;
+  display: flex;
+  /* justify-content: center; */
+  bottom: 1rem;
+  /* align-items: flex-end; */
+  flex-direction: column;
+  text-align: center;
+  left: 2rem;
+  color: #fff;
+  text-align: left;
+}
+
+.wrapper__info-title {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.item__link-wrapper img {
+  border-radius: 0.25rem;
+}
+
+/* ================================== 8, Rooms ================================== */
+.rooms {
+  padding: 0 2rem;
+}
+.rooms img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.rooms .rooms__item {
+  transition: all 0.3s;
+}
+.rooms .rooms__item:hover {
+  -webkit-box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+  transform: scale(1.01);
+}
+
+.rooms .rooms__heading {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.rooms .item-link__content {
+  margin-top: 1rem;
+  color: #222;
+  padding: 0.5rem;
+}
+.item-link__content .link__content-name {
+  font-size: 1.25rem;
+}
+
+.rooms__item-link:hover .link__content-name {
+  color: #f65e39;
+}
+
+.rooms .rooms__pagination {
+  margin-top: 2.5rem;
+}
+
+.rooms .page-link {
+  border: none;
+  color: #222;
+}
+.rooms .page-item.active .page-link {
+  color: #fff;
+  background-color: #f65e39;
+  border-radius: 50%;
+  text-align: center;
+}
+.rooms .page-item .page-link:hover {
+  background-color: #fff;
+  color: #f65e38;
+}
+.rooms .page-item.active .page-link:hover {
+  color: #fff;
+  background-color: #f65e39;
+}
+
+/* ================================== 9, Room Detail ================================== */
+
+/* Owl carousel */
+.roomDetail-slider .slider__item {
+  position: relative;
+}
+.roomDetail-slider .slider__item img {
+  /* transform: scale(1); */
+}
+.roomDetail-slider .slider__item img:hover {
+  transform: scale(1.025);
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+/* Owl nav */
+.roomDetail-slider .owl-nav .owl-prev {
+  position: absolute;
+  content: "";
+  left: 5%;
+  top: 35%;
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: none;
+  border-radius: 50% !important;
+  width: 3.5rem;
+  height: 3.5rem;
+  outline: none;
+}
+.roomDetail-slider .owl-nav .owl-prev span {
+  font-size: 1.75rem;
+  color: #fff;
+}
+.roomDetail-slider .owl-nav .owl-next {
+  position: absolute;
+  content: "";
+  right: 5%;
+  top: 35%;
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: none;
+  border-radius: 50% !important;
+  width: 3.5rem;
+  height: 3.5rem;
+  outline: none;
+}
+.roomDetail-slider .owl-nav .owl-next span {
+  font-size: 1.75rem;
+  color: #fff;
+}
+
+/* ================================== 10, Room Detail ================================== */
+.detail h1{
+    margin-top: 1.5rem;
+    /* font-size: 2.5rem; */
+}
+@media screen and (max-width: 426px){
+    .detail h1{
+        margin-bottom: 1rem !important;
+        font-size: 1.75rem;
+    }
+
+}
+.detail .detail__info {
+  position: relative;
+}
+.detail__info .detail__info-short::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 20%, #fff);
+}
+.detail__info p {
+  line-height: 1.5;
+  color: #222;
+}
+.detail__info .detail__info-btn {
+  color: #f65e39;
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  content: "";
+  padding: 0;
+}
+.detail__info .detail__info-btn:hover {
+  color: #f65e39;
+}
+.detail__info .show-info {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  /* max-height: 500px; */
+}
+
+.detail .detail__utilities{
+    margin-top: 4rem !important;
+}
+
+.detail .detail__utilities-list {
+  flex-wrap: wrap;
+  color: #555;
+}
+.detail__utilities-list .list-item {
+  display: flex;
+  flex-basis: 33%;
+  margin-bottom: 1rem;
+}
+.detail__utilities-list .list-item span {
+  margin-left: 1rem;
+}
+.detail__booking {
+  max-width: 25rem;
+  margin-left: auto;
+  position: sticky;
+  top: 7rem;
+  border: 1px solid #e9e9e9;
+  border-radius: 0.25rem;
+}
+.detail__booking-sidebar {
+  padding: 1.5rem 0.75rem;
+}
+.sidebar__price-text {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.sidebar__content-btn {
+  background-image: linear-gradient(90deg, #f65e38 0, #f68a39 51%, #f65e38);
+  background-size: 200% auto;
+  box-shadow: 0 0.25rem 0.75rem 0 rgba(246, 116, 57, 0.4);
+  color: #fff !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5 1rem !important;
+  height: 3rem;
+  transition: all 0.3s;
+}
+.sidebar__content-btn:hover{
+    background-position: 100%;
+
+}
